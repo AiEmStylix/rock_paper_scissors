@@ -1,0 +1,107 @@
+/*Macchiato Color Palette in Cappuchin*/
+:root {
+  --base: #24273a;
+  --crust: #181926;
+  --surface0: #363a4f;
+  --surface1: #494d64;
+  --surface2: #5b6078;
+  --overlay0: #6e738d;
+  --overlay1: #8087a2;
+  --overlay2: #939ab7;
+  --subtext0: #a5adcb;
+  --subtext1: #b8c0e0;
+  --text: #cad3f5;
+  --lavender: #b7bdf8;
+  --blue: #8aadf4;
+  --sapphire: #7dc4e4;
+  --sky: #91d7e3;
+  --teal: #8bd5ca;
+  --green: #a6da95;
+  --yellow: #eed49f;
+  --peach: #f5a97f;
+  --maroon: #ee99a0;
+  --red: #ed8796;
+  --mauve: #c6a0f6;
+  --pink: #f5bde6;
+  --flamingo: #f0c6c6;
+  --rosewater: #f4dbd6;
+}
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: var(--text);
+}
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--base);
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--surface0);
+  color: var(--text);
+  padding: 16px 0;
+}
+
+main {
+  flex: 1;
+}
+
+.footer {
+  background-color: var(--crust);
+  min-height: 50px;
+  text-align: center;
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-square {
+  width: 160px;
+  height: 160px;
+  margin: 16px 0;
+  border-radius: 16px;
+}
+
+.sign {
+  font-size: 60px;
+}
