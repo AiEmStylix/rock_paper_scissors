@@ -4,13 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <button>Play game</button>
-    <div id="result">Result:</div>
-    <div id="playerScore">Player Score: 0</div>
-    <div id="computerScore">Computer Score: 0</div>
-    <div id="winner">Winner:</div>
+    <header>
+      <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+
+    <main>
+      <div class="scoreboard"></div>
+      <div class="buttons">
+        <button class="btn-square" id="rock-btn"></button>
+        <button class="btn-square" id="paper-btn"></button>
+        <button class="btn-square" id="scissors-btn"></button>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Stylix
+      </p>
+    </footer>
     <script src="rps.js"></script>
   </body>
 </html>
